@@ -50,3 +50,64 @@
 
 // console.log(10==10 && 10==11);  and
 // console.log(10==10 || 10==11);  or
+
+
+// function
+// -------------------------
+
+
+// function fun1(){
+//     let a=parseInt(document.getElementById("demo").value)
+//     console.log(typeof a)
+//     console.log(a);
+    
+
+//     console.log('welcome');
+    
+// }
+
+// fun1()
+
+
+
+
+function add(){
+    let a=parseInt(document.getElementById("a").value)
+    let b=parseInt(document.getElementById("b").value)
+    console.log(a+b);
+    let h3=document.getElementById("h3")
+    h3.innerHTML=a+b
+    
+}
+function sub(){
+    let a=parseInt(document.getElementById("a").value)
+    let b=parseInt(document.getElementById("b").value)
+    console.log(a-b);
+    let h3=document.getElementById("h3")
+    h3.innerHTML=a-b
+    
+}
+function mult(){
+    let a=parseInt(document.getElementById("a").value)
+    let b=parseInt(document.getElementById("b").value)
+    console.log(a*b);
+    let h3=document.getElementById("h3")
+    h3.innerHTML=a*b
+    
+}
+function div(){
+    let a=parseInt(document.getElementById("a").value)
+    let b=parseInt(document.getElementById("b").value)
+    console.log(a/b);
+    let h3=document.getElementById("h3")
+    h3.innerHTML=a/b
+    
+}
+function mod(){
+    let a=parseInt(document.getElementById("a").value)
+    let b=parseInt(document.getElementById("b").value)
+    console.log(a%b);
+    let h3=document.getElementById("h3")
+    h3.innerHTML=a%b
+    
+}
