@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="timer"></h1>
+
+    <script>
+        // for the erorrs
+
+        // try{
+        //     // let a='shahid'
+        //     console.log(a);
+            
+        // }
+        // catch(error){
+        //     console.log('error',error.message);
+            
+        // }
+        // finally{
+        //     console.log('prg ends');
+            
+        // }
+
+
+
+        // loop workings
+
+        // console.log('start');
+        // for(i=0;i<=100;i++){
+        //     console.log(i);
+            
+        // }
+        // console.log('end');
+        
+
+        // set timer
+
+        // console.log('start');
+        // setTimeout( ()=>{
+        //     console.log('timer');
+            
+        // },2000)
+        // console.log('end');
+        
+        
+        // set limit in  timing
+
+
+        // let count=10
+        // let data=setInterval(()=>{
+
+        //     // console.log('count');
+        //     document.getElementById("timer").innerHTML=count
+        //     count--
+        //     if (count<0){
+        //         clearInterval(data)
+        //     }
+            
+        // },1000)
+
+
+        let mint=2
+        let count=59;
+        let data=setInterval(()=>{
+
+            // console.log('count')
+            document.getElementById("timer").innerHTML=mint
+            count--
+            if (count==60){
+                console.log('1 mint');
+                
+            }
+            document.getElementById("timer").innerHTML=count
+            if (count<0){
+                console.log('times up');
+                
+            }
+            
+        },1000)
+
+
+//         let seconds = 180; // 3 minutes in seconds
+// let intervalId = setInterval(function() {
+//     let minutes = Math.floor(seconds / 60); // Calculate minutes
+//     let remainingSeconds = seconds % 60;   // Calculate remaining seconds
+
+//     // Format the time as MM:SS
+//     let timeString = `${minutes}:${remainingSeconds < 10 ? '0' : ''}${remainingSeconds}`;
+//     console.log(timeString);
+
+//     // Conditional check: Trigger some action at 1 minute
+//     if (seconds === 60) {
+//         console.log("Only 1 minute left!");
+//     }
+
+//     // Decrement the time
+//     seconds--;
+
+//     // Condition to stop the countdown when seconds reach 0
+//     if (seconds < 0) {
+//         clearInterval(intervalId); // Stop the interval
+//         console.log("Time's up!");
+//     }
+// }, 1000); // Run every 1 second
+ </script>
+    
+</body>
+</html>
