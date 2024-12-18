@@ -40,7 +40,7 @@
             event.preventDefault()
             let no =document.getElementById("no").value
             let h3=document.getElementById("h3")
-            if(/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/.test(no)){
+            if(/^[A-Za-z\d@$!%*?&]{8,}$/.test(no)){
                 h3.innerHTML='valid'
                 h3.style.color='green'
 
